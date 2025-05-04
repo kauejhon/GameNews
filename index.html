@@ -6,6 +6,8 @@
   <title>GameNews - Início</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="src/styles/global.css">
+  <link rel="stylesheet" href="src/styles/components/buttons.css">
+  <link rel="stylesheet" href="src/styles/layout/footer.css">
 </head>
 <body>
   <nav id="menu">
@@ -20,7 +22,7 @@
   <main id="conteudo">
     <section>
         <h2>Bem-vindo ao GameNews!</h2>
-      <p>Explore o universo dos games com as últimas notícias, análises e novidades do mercado. Nosso portal traz tudo que o gamer precisa em um só lugar!</p>
+      <li>Explore o universo dos games com as últimas notícias, análises e novidades do mercado. Nosso portal traz tudo que o gamer precisa em um só lugar!</li>
     </section>
     <section class="carrossel-container">
       <button onclick="anterior()" id="prev-button">◀</i></button>
@@ -35,21 +37,21 @@
         <article class="noticia">
           <h3>Spider-Man 2 ganha expansão gratuita</h3>
           <img src="src/assets/img/img-01.jpg" alt="Spider-Man 2" class="imagemZoom">
-          <p>A Insomniac anunciou uma DLC gratuita para Spider-Man 2 com novas missões e trajes exclusivos para Peter e Miles!</p>
+          <li>A Insomniac anunciou uma DLC gratuita para Spider-Man 2 com novas missões e trajes exclusivos para Peter e Miles!</li>
         </article>
         <article class="noticia">
           <div class="separarteste">
             <h3>Nintendo Switch 2 será anunciado ainda este ano</h3>
             <img src="src/assets/img/img-02.jpg" alt="Nintendo Switch 2" class="imagemZoom">
           </div>
-            <p class="teste3">Rumores apontam que o novo console da Nintendo será revelado no segundo semestre de 2025 com retrocompatibilidade completa.</p>
+            <li class="teste3">Rumores apontam que o novo console da Nintendo será revelado no segundo semestre de 2025 com retrocompatibilidade completa.</li>
         </article>
       </section>
     <!-- Seção das noticias mais faladas da semana -->
       <div class="resumo">
         <section>
           <h2>Em Alta</h2>
-          <p>Esses são os jogos mais falados da semana:</p>
+          <li>Esses são os jogos mais falados da semana:</li>
           <ul>
             <li>The Last of Us Part III (rumores aumentam)</li>
             <li>Helldivers 2 domina o multiplayer online</li>
@@ -58,7 +60,7 @@
         </section>
         <section>
           <h2>Plataformas que cobrimos</h2>
-          <p>Nosso conteúdo abrange todas as plataformas:</p>
+          <li>Nosso conteúdo abrange todas as plataformas:</li>
           <ul>
             <li>PlayStation 4 / 5</li>
             <li>Xbox One / Series X|S</li>
@@ -72,15 +74,54 @@
   </main>
   <footer>
     <button id="btnTopo" title="Voltar ao topo">↑</button>
-    <p class="trademark">&copy; 2025 GameNews - Todos os direitos reservados.</p>
-    <p class="trademark">Desenvolvido por Marcus e Kauê</p>
-    <p><a href="src/pages/contato.html">Contato</a></p>
-    <p><a href="src/pages/sobre.html">Sobre nós</a></p>
+    <div class="footer-links">
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="src/pages/sobre.html">Sobre nós</a></li>
+          <li><a href="src/pages/privacidade.html">Política de Privacidade</a></li>
+          <li><a href="src/pages/contato.html">Contato</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="#">Jogos</a></li>
+          <li><a href="#">Especiais</a></li>
+          <li><a href="#">PlayStation</a></li>
+          <li><a href="#">Xbox</a></li>
+          <li><a href="#">Nintendo</a></li>
+          <li><a href="#">PC</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nossos Canais</h4>
+        <ul>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Cadastre-se em nossa Newsletter</h4>
+        <form action="src/pages/contato.html" method="post">
+          <input type="email" name="email" placeholder="Digite seu e-mail" required>
+          <button type="submit" class="global-button">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-trademark">
+      <li class="trademark">&copy; 2025 GameNews - Todos os direitos reservados.</li>
+      <li class="trademark">Desenvolvido por Marcus e Kauê</li>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   <script src="src/scripts/imgZoom.js"></script>
   <script src="src/scripts/pages/home/carousel.js"></script>
-  <script src="src/scripts/pages/home/carousel.js"></script>
+  <script src="src/scripts/pages/backontop.js"></script>
 </body>
 </html>
