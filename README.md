@@ -1,6 +1,6 @@
 # GameNews 🎮📰
 
-Bem-vindo ao **GameNews**, seu portal definitivo para as últimas notícias do mundo dos jogos! Aqui, você encontra análises aprofundadas, atualizações quentes, rumores e tendências sobre tudo que envolve videogames.
+Bem-vindo ao **GameNews**, seu portal definitivo para as últimas notícias do mundo dos jogos! Aqui, você encontra atualizações quentes, rumores e tendências sobre tudo que envolve videogames.
 
 ## 🚀 Sobre o Projeto
 O GameNews foi criado para reunir gamers e entusiastas, oferecendo conteúdo relevante e atualizado sobre o universo dos jogos. Nosso objetivo é ser sua fonte confiável de informações, trazendo novidades sobre lançamentos, eventos, e muito mais!
