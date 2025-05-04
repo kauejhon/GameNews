@@ -204,3 +204,31 @@ footer {
   justify-content: center;
   gap: 1rem;
 }
+
+
+
+
+
+
+
+
+
+#btnTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #2a73cc;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#btnTopo:hover {
+  background-color: #1f58a0;
+}
