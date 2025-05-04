@@ -1,0 +1,1 @@
+Pasta para adicionar elementos que são padrões nas páginas, por exemplo, estilo de botões, estilo de links, etc.

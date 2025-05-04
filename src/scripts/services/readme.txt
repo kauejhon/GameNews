@@ -1,0 +1,1 @@
+Pasta para colocar funções JS que consomem API de terceiros

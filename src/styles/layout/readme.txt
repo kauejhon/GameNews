@@ -1,0 +1,1 @@
+Pasta para adicionar layouts que se repetem por todas as páginas, por exemplo a barra de navegação e o footer.

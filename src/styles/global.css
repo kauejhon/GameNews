@@ -1,0 +1,206 @@
+/* Arquivo para adicionar estilização que vai se repetir em todas as páginas, por exemplo as fontes. *//* Fonte futurista */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #d0ffd0;
+}
+
+/* Cabeçalho / menu */
+#menu {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #0f0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+#conteudo {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  background-color: #111;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+h2 {
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #0f0;
+  margin-top: 15px;
+}
+
+.carrossel-container {
+  text-align: center;
+}
+
+.noticia {
+  background-color: #1a1a1a;
+  border-left: 4px solid #00ff00;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+.noticia p {
+  color: #c0ffc0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #conteudo {
+    padding: 15px;
+  }
+
+  section {
+    margin: 10px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+}
+#noticias {
+  max-width: 600px; /* Largura máxima das notícias */
+  margin-left: 40px; /* Alinha à esquerda com espaço */
+  margin-right: auto; /* Deixa o lado direito livre */
+}
+
+.noticia img {
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  width: 100%; 
+  max-width: 600px;
+}
+
+/* Efeito de zoom ao passar o mouse */
+.zoom-in {
+  transform: scale(1.03);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #0f0;
+}
+
+.trademark {
+  color: #fff;
+}
+
+/* Perguntar para a professora se podia deixar assim*/
+/* .noticia img:hover {
+  transform: scale(1.03);
+} */
+
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carrossel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 350px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.carrossel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+#prev-button, #next-button {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#prev-button img, #next-button img {
+  width: 100%;
+  height: 100%;
+}
+#prev-button:hover, #next-button:hover {
+  transform: scale(1.1);
+}
+
+
+.destaque {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+}
+
+.teste  {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
