@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notícias - GameNews</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    <title>GameNews | Notícias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/components/buttons.css">
+    <link rel="stylesheet" href="/src/styles/layout/footer.css">
   </head>
   <body>
     <nav id="menu">
@@ -102,5 +99,55 @@
         </article>
       </section>
     </main>
+    <footer>
+      <button id="btnTopo" title="Voltar ao topo">↑</button>
+      <div class="footer-links">
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="src/pages/sobre.html">Sobre nós</a></li>
+            <li><a href="src/pages/privacidade.html">Política de Privacidade</a></li>
+            <li><a href="src/pages/contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Especiais</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">PC</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nossos Canais</h4>
+          <ul>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Cadastre-se em nossa Newsletter</h4>
+          <form action="src/pages/contato.html" method="post">
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <button type="submit" class="global-button">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-trademark">
+        <li class="trademark">&copy; 2025 GameNews - Todos os direitos reservados.</li>
+        <li class="trademark">Desenvolvido por Marcus e Kauê</li>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="/src/scripts/imgZoom.js"></script>
+    <script src="/src/scripts/pages/home/carousel.js"></script>
+    <script src="/src/scripts/pages/backontop.js"></script>
   </body>
 </html>
