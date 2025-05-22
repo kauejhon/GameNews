@@ -51,6 +51,7 @@ h2 {
 
 .result-item:hover {
   background-color: #262626;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
 }
 
 .result-item img {

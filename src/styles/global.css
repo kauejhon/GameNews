@@ -74,12 +74,19 @@ h3 {
 }
 
 .noticia {
+  display: flex;
+  gap: 20px;
   background-color: #1a1a1a;
   border-left: 4px solid #00ff00;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+.noticia:hover {
+  background-color: #262626;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
 }
 
 .noticia p {
@@ -124,7 +131,7 @@ h3 {
   margin-bottom: 10px;
   transition: transform 0.3s ease;
   width: 100%; 
-  max-width: 600px;
+  max-width: 300px;
 }
 
 /* Efeito de zoom ao passar o mouse */
