@@ -11,14 +11,17 @@
     />
     <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/pages/search-results.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../styles/layout/searchbar.css" />
+    <link rel="stylesheet" href="../styles/layout/footer.css" />
+    <link rel="stylesheet" href="../styles/components/buttons.css" />
   </head>
   <body>
     <nav id="menu">
-      <span id="logo">GameNews</span>
+      <a href="/index.html" id="logo">GameNews</a>
+      <div class="search-container">
+        <input type="text" placeholder="Pesquisar..." class="search-input" />
+        <button class="search-button" aria-label="Buscar">🔍</button>
+      </div>
       <ul class="nav-links">
         <li><a href="../../index.html">Início</a></li>
         <li><a href="noticias.html">Notícias</a></li>
@@ -26,7 +29,7 @@
       </ul>
     </nav>
 
-    <main class="search-container">
+    <main class="search-results">
       <h2>Resultados da busca</h2>
       <p class="subtitle">Exibindo todas as notícias disponíveis:</p>
 
@@ -111,14 +114,51 @@
         </div>
       </div>
     </main>
-
     <footer>
-      <p class="trademark">
-        &copy; 2025 GameNews - Todos os direitos reservados.
-      </p>
-      <p>
-        <a href="contato.html">Contato</a> | <a href="sobre.html">Sobre nós</a>
-      </p>
+      <button id="btnTopo" title="Voltar ao topo">↑</button>
+      <div class="footer-links">
+        <div>
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="src/pages/sobre.html">Sobre nós</a></li>
+            <li><a href="src/pages/privacidade.html">Política de Privacidade</a></li>
+            <li><a href="src/pages/contato.html">Contato</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorias</h4>
+          <ul>
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Especiais</a></li>
+            <li><a href="#">PlayStation</a></li>
+            <li><a href="#">Xbox</a></li>
+            <li><a href="#">Nintendo</a></li>
+            <li><a href="#">PC</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nossos Canais</h4>
+          <ul>
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Cadastre-se em nossa Newsletter</h4>
+          <form action="src/pages/contato.html" method="post">
+            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <button type="submit" class="global-button">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-trademark">
+        <li class="trademark">&copy; 2025 GameNews - Todos os direitos reservados.</li>
+        <li class="trademark">Desenvolvido por Marcus e Kauê</li>
+      </div>
     </footer>
   </body>
 </html>

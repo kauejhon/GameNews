@@ -1,6 +1,5 @@
 /* Arquivo para adicionar estilização que vai se repetir em todas as páginas, por exemplo as fontes. *//* Fonte futurista */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 body {
@@ -26,6 +25,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #0f0;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -49,7 +49,7 @@ body {
 }
 
 #conteudo {
-  padding: 20px;
+  padding: 20px 150px;
 }
 
 section {
@@ -74,17 +74,51 @@ h3 {
   text-align: center;
 }
 
+.conteudo-principal {
+  display: flex;
+}
+
+.noticia-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .noticia {
+  display: flex;
+  gap: 20px;
   background-color: #1a1a1a;
-  border-left: 4px solid #00ff00;
-  padding: 15px;
-  margin-bottom: 15px;
+  border: 1px solid #0f0;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+  padding: 15px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px #0f0;
+}
+
+.noticia:hover {
+  background-color: #262626;
+  box-shadow: 0 0 12px rgba(0, 255, 0, 0.5);
+}
+
+.noticia img {
+  width: 250px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.noticia h3 {
+  font-size: 1.5rem;
+  color: #0f0;
+  margin-bottom: 6px;
 }
 
 .noticia p {
-  color: #c0ffc0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #bbbbbb;
+  line-height: 1.4;
 }
 
 /* Responsividade */
@@ -118,15 +152,6 @@ h3 {
   margin-right: auto; /* Deixa o lado direito livre */
 }
 
-.noticia img {
-  border: 2px solid #00ff00;
-  box-shadow: 0 0 15px #00ff00;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-  width: 100%; 
-  max-width: 600px;
-}
 
 /* Efeito de zoom ao passar o mouse */
 .zoom-in {
@@ -187,11 +212,6 @@ h3 {
   gap: 1rem;
 }
 
-.teste  {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
 
 
 
