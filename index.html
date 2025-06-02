@@ -10,6 +10,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
       crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="src/styles/global.css">
     <link rel="stylesheet" href="src/styles/layout/searchbar.css">
     <link rel="stylesheet" href="src/styles/layout/footer.css">
@@ -20,7 +21,7 @@
       <a href="/index.html" id="logo">GameNews</a>
       <div class="search-container">
         <input type="text" placeholder="Pesquisar..." class="search-input" />
-        <button class="search-button" aria-label="Buscar">🔍</button>
+        <button class="search-button" aria-label="Buscar"><i class="bi bi-search"></i></button>
       </div>
       <ul class="nav-links">
         <li><a href="index.html">Início</a></li>
@@ -33,60 +34,68 @@
       <section>
         <h2>Bem-vindo ao GameNews!</h2>
         <p>Explore o universo dos games com as últimas notícias, análises e novidades do mercado. Nosso portal traz tudo que o gamer precisa em um só lugar!</p>
-      </section>
-      <section class="carrossel-container">
-        <button onclick="anterior()" id="prev-button">◀</i></button>
-        <div class="carrossel">
-          <img id="imagem" src="src/assets/img/img-01.jpg" alt="Carro em destaque">
-        </div>
-        <button onclick="proxima()" id="next-button">▶</i></button>
+        <section class="carrossel-container">
+          <button onclick="anterior()" id="prev-button"><i class="bi bi-chevron-left"></i></button>
+          <div class="carrossel">
+            <a href=""><img id="imagem" src="src/assets/img/img-01.jpg" alt="Carro em destaque"></a>
+          </div>
+          <button onclick="proxima()" id="next-button"><i class="bi bi-chevron-right"></i></button>
+        </section>
       </section>
       <div class="conteudo-principal">
         <section class="noticia-grid">
-          <h2>Notícias em destaque</h2>
-          <article class="noticia">
-            <img src="src/assets/img/img-01.jpg" alt="Spider-Man 2" class="imagemZoom">
-            <div>
-              <h3>Spider-Man 2 ganha expansão gratuita</h3>
-              <p>A Insomniac anunciou uma DLC gratuita para Spider-Man 2 com novas missões e trajes exclusivos para Peter e Miles!</p>
-            </div>
-          </article>
-          <article class="noticia">
-            <img src="src/assets/img/img-02.jpg" alt="Nintendo Switch 2" class="imagemZoom">
-            <div>
-              <h3>Nintendo Switch 2 será anunciado ainda este ano</h3>
-              <p>
-                Rumores apontam que o novo console da Nintendo será revelado no segundo
-                semestre de 2025 com retrocompatibilidade completa.
-              </p>
-            </div>
-          </article>
-          <article class="noticia">
-            <img src="/src/assets/img/img-05.jpg" alt="God of War no PC" class="imagemZoom">
-            <div>
-              <h3>God of War Ragnarok chega ao PC</h3>
-              <p>
-                Após grande sucesso no PS5, God of War Ragnarok será lançado para
-                PC em breve, com suporte a mods e gráficos otimizados.
-              </p>
-            </div>
-          </article>
-          <article class="noticia">
-            <img src="/src/assets/img/img-07.jpg" alt="FIFA 25" class="imagemZoom">
-            <div>
-              <h3>FIFA 25 promete revolução com novo motor gráfico</h3>
-              <p>
-                A EA Sports revelou detalhes de FIFA 25, que trará um novo motor
-                gráfico com foco em realismo, movimentação fluida e torcida
-                dinâmica.
-              </p>
-            </div>
-          </article>
+          <h2><i class="bi bi-rss"></i> Notícias em destaque</h2>
+          <a href="src/pages/noticia1.html" class="link-noticia">
+            <article class="noticia">
+              <img src="src/assets/img/img-01.jpg" alt="Spider-Man 2" class="imagemZoom">
+              <div>
+                <h3>Spider-Man 2 ganha expansão gratuita</h3>
+                <p>A Insomniac anunciou uma DLC gratuita para Spider-Man 2 com novas missões e trajes exclusivos para Peter e Miles!</p>
+              </div>
+            </article>
+          </a>
+          <a href="src/pages/noticia2.html" class="link-noticia">
+            <article class="noticia">
+              <img src="src/assets/img/img-02.jpg" alt="Nintendo Switch 2" class="imagemZoom">
+              <div>
+                <h3>Nintendo Switch 2 será anunciado ainda este ano</h3>
+                <p>
+                  Rumores apontam que o novo console da Nintendo será revelado no segundo
+                  semestre de 2025 com retrocompatibilidade completa.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a href="src/pages/noticia3.html" class="link-noticia">
+            <article class="noticia">
+              <img src="/src/assets/img/img-05.jpg" alt="God of War no PC" class="imagemZoom">
+              <div>
+                <h3>God of War Ragnarok chega ao PC</h3>
+                <p>
+                  Após grande sucesso no PS5, God of War Ragnarok será lançado para
+                  PC em breve, com suporte a mods e gráficos otimizados.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a href="src/pages/notícia4.html" class="link-noticia">
+            <article class="noticia">
+              <img src="/src/assets/img/img-07.jpg" alt="FIFA 25" class="imagemZoom">
+              <div>
+                <h3>FIFA 25 promete revolução com novo motor gráfico</h3>
+                <p>
+                  A EA Sports revelou detalhes de FIFA 25, que trará um novo motor
+                  gráfico com foco em realismo, movimentação fluida e torcida
+                  dinâmica.
+                </p>
+              </div>
+            </article>
+          </a>
         </section>
           <!-- Seção das noticias mais faladas da semana -->
         <div class="resumo">
           <section>
-            <h2>Em Alta</h2>
+            <h2><i class="bi bi-graph-up-arrow"></i> Em Alta</h2>
             <li>Esses são os jogos mais falados da semana:</li>
             <ul>
               <li>The Last of Us Part III (rumores aumentam)</li>
@@ -95,7 +104,7 @@
             </ul>
           </section>
           <section>
-            <h2>Plataformas que cobrimos</h2>
+            <h2><i class="bi bi-controller"></i> Plataformas que cobrimos</h2>
             <li>Nosso conteúdo abrange todas as plataformas:</li>
             <ul>
               <li>PlayStation 4 / 5</li>
@@ -109,7 +118,7 @@
       </div>
     </main>
     <footer>
-      <button id="btnTopo" title="Voltar ao topo">↑</button>
+      <button id="btnTopo" title="Voltar ao topo"><i class="bi bi-caret-up-fill"></i></button>
       <div class="footer-links">
         <div>
           <h4>Institucional</h4>
