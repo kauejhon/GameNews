@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GameNews | FIFA 25 promete revolução com novo motor gráfico</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/layout/footer.css">
+    <link rel="stylesheet" href="../styles/layout/searchbar.css">
+    <link rel="stylesheet" href="../styles/components/buttons.css">
+  </head>
+  <body>
+    <nav id="menu">
+      <a href="../../index.html" id="logo">GameNews</a>
+      <div class="search-container">
+        <input type="text" placeholder="Pesquisar..." class="search-input" />
+        <button class="search-button" aria-label="Buscar"><i class="bi bi-search"></i></button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="noticias.html">Notícias</a></li>
+        <li><a href="destaque.html">Destaque</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main id="conteudo">
+      <section class="noticia">
+        <img
+          src="https://www.dexerto.com/cdn-image/wp-content/uploads/2024/07/17/ea-fc-25-licenses-teams-stadiums-leagues.jpg?width=1200&quality=60&format=auto"
+          alt="FIFA 25"
+          class="imagemZoom"
+          style="max-width:350px;"
+        >
+        <div>
+          <h2>FIFA 25 promete revolução com novo motor gráfico</h2>
+          <p class="data-noticia"><em>Publicado em 4 de junho de 2025</em></p>
+          <p>
+            A EA Sports revelou detalhes de <strong>FIFA 25</strong>, que trará um novo motor gráfico com foco em realismo, movimentação fluida e torcida dinâmica. A promessa é de uma experiência ainda mais imersiva para os fãs de futebol virtual.
+          </p>
+          <p>
+            Segundo a desenvolvedora, o novo motor permitirá animações mais naturais, física aprimorada da bola e ambientes de estádio ainda mais vivos. A torcida reagirá em tempo real às jogadas, tornando cada partida única e emocionante.
+          </p>
+          <p>
+            Além disso, FIFA 25 contará com melhorias no modo carreira, novas opções de personalização de clubes e integração com plataformas de eSports, aproximando ainda mais os jogadores do cenário competitivo.
+          </p>
+          <p>
+            O lançamento está previsto para o final de 2025, com versões para PlayStation 5, Xbox Series X|S e PC.
+          </p>
+          <a href="noticias.html" class="global-button" style="margin-top:20px;display:inline-block;">← Voltar para Notícias</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <button id="btnTopo" title="Voltar ao topo"><i class="bi bi-caret-up-fill"></i></button>
+        <div class="footer-links">
+          <div>
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="/src/pages/sobre.html">Sobre nós</a></li>
+              <li><a href="/src/pages/privacidade.html">Política de Privacidade</a></li>
+              <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Categorias</h4>
+            <ul>
+              <li><a href="/src/pages/playstation.html">PlayStation</a></li>
+              <li><a href="/src/pages/xbox.html">Xbox</a></li>
+              <li><a href="/src/pages/nintendo.html">Nintendo</a></li>
+              <li><a href="/src/pages/pc.html">PC</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Nossos Canais</h4>
+            <ul>
+              <li><a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></li>
+              <li><a href="https://www.discord.com/" target="_blank">Discord</a></li>
+              <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Cadastre-se em nossa Newsletter</h4>
+            <form action="src/pages/contato.html" method="post" class="search-container">
+              <input type="email" name="email" placeholder="Digite seu e-mail" required class="search-input">
+              <button type="submit" class="search-button"><a href="/src/pages/newsletter.html">Enviar</a></button>
+            </form>
+          </div>
+        </div>
+        <hr>
+        <div class="footer-trademark">
+          <li class="trademark">&copy; 2025 GameNews - Todos os direitos reservados.</li>
+          <li class="trademark">Desenvolvido por Marcus e Kauê</li>
+        </div>
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+      <script src="/src/scripts/imgZoom.js"></script>
+      <script src="/src/scripts/pages/backontop.js"></script>
+      <script src="/src/scripts/components/search.js"></script>
+  </body>
+</html>
