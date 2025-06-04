@@ -24,9 +24,9 @@
         <button class="search-button" aria-label="Buscar"><i class="bi bi-search"></i></button>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
         <li><a href="src/pages/noticias.html">Notícias</a></li>
         <li><a href="src/pages/destaque.html">Destaque</a></li>
+        <li><a href="src/pages/sobre.html">Sobre</a></li>
       </ul>
     </nav>
     
@@ -37,7 +37,9 @@
         <section class="carrossel-container">
           <button onclick="anterior()" id="prev-button"><i class="bi bi-chevron-left"></i></button>
           <div class="carrossel">
-            <a href=""><img id="imagem" src="src/assets/img/img-01.jpg" alt="Carro em destaque"></a>
+            <a id="imagem-link" href="src/pages/noticia1.html">
+              <img id="imagem" src="src/assets/img/img-01.jpg" alt="Imagem do carrossel">
+            </a>
           </div>
           <button onclick="proxima()" id="next-button"><i class="bi bi-chevron-right"></i></button>
         </section>
@@ -47,7 +49,7 @@
           <h2><i class="bi bi-rss"></i> Notícias em destaque</h2>
           <a href="src/pages/noticia1.html" class="link-noticia">
             <article class="noticia">
-              <img src="src/assets/img/img-01.jpg" alt="Spider-Man 2" class="imagemZoom">
+              <img src="src/assets/img/img-01.jpg" alt="Spider-Man 2" class="imgZoom">
               <div>
                 <h3>Spider-Man 2 ganha expansão gratuita</h3>
                 <p>A Insomniac anunciou uma DLC gratuita para Spider-Man 2 com novas missões e trajes exclusivos para Peter e Miles!</p>
@@ -56,7 +58,7 @@
           </a>
           <a href="src/pages/noticia2.html" class="link-noticia">
             <article class="noticia">
-              <img src="src/assets/img/img-02.jpg" alt="Nintendo Switch 2" class="imagemZoom">
+              <img src="src/assets/img/img-02.jpg" alt="Nintendo Switch 2" class="imgZoom">
               <div>
                 <h3>Nintendo Switch 2 será anunciado ainda este ano</h3>
                 <p>
@@ -68,7 +70,7 @@
           </a>
           <a href="src/pages/noticia3.html" class="link-noticia">
             <article class="noticia">
-              <img src="/src/assets/img/img-05.jpg" alt="God of War no PC" class="imagemZoom">
+              <img src="/src/assets/img/img-05.jpg" alt="God of War no PC" class="imgZoom">
               <div>
                 <h3>God of War Ragnarok chega ao PC</h3>
                 <p>
@@ -80,7 +82,7 @@
           </a>
           <a href="src/pages/notícia4.html" class="link-noticia">
             <article class="noticia">
-              <img src="/src/assets/img/img-07.jpg" alt="FIFA 25" class="imagemZoom">
+              <img src="/src/assets/img/img-07.jpg" alt="FIFA 25" class="imgZoom">
               <div>
                 <h3>FIFA 25 promete revolução com novo motor gráfico</h3>
                 <p>
@@ -96,9 +98,9 @@
         <div class="resumo">
           <section>
             <h2><i class="bi bi-graph-up-arrow"></i> Em Alta</h2>
-            <li>Esses são os jogos mais falados da semana:</li>
+            <p>Esses são os jogos mais falados da semana:</p>
             <ul>
-              <li>The Last of Us Part III (rumores aumentam)</li>
+              <li><a href="#" class="link-noticia">The Last of Us Part III (rumores aumentam)</a></li>
               <li>Helldivers 2 domina o multiplayer online</li>
               <li>Valorant Mobile entra em fase beta fechada</li>
             </ul>
@@ -143,17 +145,17 @@
         <div>
           <h4>Nossos Canais</h4>
           <ul>
-            <li><a href="#">WhatsApp</a></li>
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
+            <li><a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></li>
+            <li><a href="https://www.discord.com/" target="_blank">Discord</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
           </ul>
         </div>
         <div>
           <h4>Cadastre-se em nossa Newsletter</h4>
-          <form action="src/pages/contato.html" method="post">
-            <input type="email" name="email" placeholder="Digite seu e-mail" required>
-            <button type="submit" class="global-button">Enviar</button>
+          <form action="src/pages/contato.html" method="post" class="search-container">
+            <input type="email" name="email" placeholder="Digite seu e-mail" required class="search-input">
+            <button type="submit" class="search-button"><a href="/src/pages/newsletter.html">Enviar</a></button>
           </form>
         </div>
       </div>

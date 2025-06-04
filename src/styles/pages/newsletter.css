@@ -1,0 +1,24 @@
+.confirm-container {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 500px;
+    margin: 60px auto 40px auto;
+    background: #111;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0f08, 0 0 8px #0f04;
+  }
+  .confirm-container h2 {
+    color: #00ff00;
+    margin-bottom: 18px;
+  }
+  .confirm-container p {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .confirm-container .global-button {
+    margin-top: 24px;
+  }
+
+#text-important {
+    color:#00ffaa;
+  }

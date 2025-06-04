@@ -10,6 +10,7 @@
       integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
       crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/src/styles/global.css">
     <link rel="stylesheet" href="/src/styles/layout/searchbar.css">
     <link rel="stylesheet" href="/src/styles/layout/footer.css">
@@ -20,93 +21,126 @@
       <a href="/index.html" id="logo">GameNews</a>
       <div class="search-container">
         <input type="text" placeholder="Pesquisar..." class="search-input" />
-        <button class="search-button" aria-label="Buscar">🔍</button>
+        <button class="search-button" aria-label="Buscar"><i class="bi bi-search"></i></button>
       </div>
       <ul class="nav-links">
-        <li><a href="/index.html">Início</a></li>
         <li><a href="/src/pages/noticias.html" class="nav-active">Notícias</a></li>
         <li><a href="/src/pages/destaque.html">Destaque</a></li>
+        <li><a href="/src/pages/sobre.html">Sobre</a></li>
       </ul>
     </nav>
 
     <main id="conteudo">
-      <section id="noticias">
+      <section class="noticia-grid">
         <h2>Últimas Notícias</h2>
-
-        <article class="noticia">
-          <img
-            src="https://img.youtube.com/vi/QdBZY2fkU-0/maxresdefault.jpg"
-            alt="Trailer GTA VI"
-          />
-          <h3>GTA VI tem novo trailer revelado</h3>
-          <p>
-            A Rockstar lançou um novo trailer de GTA VI com gráficos
-            impressionantes e data prevista para 2025. Veja os detalhes!
-          </p>
-        </article>
-
-        <article class="noticia">
-          <img
-            src="https://i.ytimg.com/vi/qysCETsJQTs/maxresdefault.jpg"
-            alt="God of War no PC"
-          />
-          <h3>God of War Ragnarok chega ao PC</h3>
-          <p>
-            Após grande sucesso no PS5, God of War Ragnarok será lançado para PC
-            em breve, com suporte a mods e gráficos otimizados.
-          </p>
-        </article>
-
-        <article class="noticia">
-          <img
-            src="https://th.bing.com/th/id/R.0ab94f29c8a323a1adf630a6ff72234f?rik=Mg67vLVH2udHyQ&riu=http%3a%2f%2fnosdicengamers.com%2fwp-content%2fuploads%2f2024%2f06%2fPR6k7ZEnE6DFoHsHKVipPD-1200-80.jpg&ehk=6S0W2tN0u8GSkyND672D4yLslkeCaDp1izXaqwUUetA%3d&risl=&pid=ImgRaw&r=0"
-            alt="Console Xbox portátil"
-          />
-          <h3>Xbox anuncia novo console portátil</h3>
-          <p>
-            A Microsoft apresentou seu novo console portátil focado em jogos em
-            nuvem e retrocompatibilidade com Xbox Series S/X.
-          </p>
-        </article>
-
-        <article class="noticia">
-          <img
-            src="https://www.dexerto.com/cdn-image/wp-content/uploads/2024/07/17/ea-fc-25-licenses-teams-stadiums-leagues.jpg?width=1200&quality=60&format=auto"
-            alt="FIFA 25"
-          />
-          <h3>FIFA 25 promete revolução com novo motor gráfico</h3>
-          <p>
-            A EA Sports revelou detalhes de FIFA 25, que trará um novo motor
-            gráfico com foco em realismo, movimentação fluida e torcida
-            dinâmica.
-          </p>
-        </article>
-
-        <article class="noticia">
-          <img
-            src="https://i.ytimg.com/vi/eBuUri6mHjo/maxresdefault.jpg"
-            alt="The Last of Us 3"
-          />
-          <h3>The Last of Us 3 está em desenvolvimento</h3>
-          <p>
-            De acordo com a Naughty Dog, o terceiro título da série The Last of
-            Us já está em desenvolvimento com foco narrativo ainda mais profundo
-            e novos personagens.
-          </p>
-        </article>
-
-        <article class="noticia">
-          <img
-            src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2025/04/nintendo-switch-2-console-best-buy.jpg"
-            alt="Nintendo Switch 2"
-          />
-          <h3>Nintendo Switch 2 pode ser anunciado ainda este ano</h3>
-          <p>
-            Rumores indicam que a Nintendo está preparando o anúncio do Switch 2
-            com hardware mais potente e retrocompatibilidade total com jogos da
-            geração atual.
-          </p>
-        </article>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="/src/assets/img/img-08.jpg"
+              alt="Novo jogo da Ubisoft"
+            />
+            <div>
+              <h3>Ubisoft anuncia novo jogo de mundo aberto</h3>
+              <p>
+                A Ubisoft revelou detalhes do seu próximo grande lançamento, um
+                jogo de mundo aberto ambientado no universo de Star Wars.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://img.youtube.com/vi/QdBZY2fkU-0/maxresdefault.jpg"
+              alt="Trailer GTA VI"
+            />
+            <div>
+              <h3>GTA VI tem novo trailer revelado</h3>
+              <p>
+                A Rockstar lançou um novo trailer de GTA VI com gráficos
+                impressionantes e data prevista para 2025. Veja os detalhes!
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://i.ytimg.com/vi/qysCETsJQTs/maxresdefault.jpg"
+              alt="God of War no PC"
+            />
+            <div>
+              <h3>God of War Ragnarok chega ao PC</h3>
+              <p>
+                Após grande sucesso no PS5, God of War Ragnarok será lançado para PC
+                em breve, com suporte a mods e gráficos otimizados.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://th.bing.com/th/id/R.0ab94f29c8a323a1adf630a6ff72234f?rik=Mg67vLVH2udHyQ&riu=http%3a%2f%2fnosdicengamers.com%2fwp-content%2fuploads%2f2024%2f06%2fPR6k7ZEnE6DFoHsHKVipPD-1200-80.jpg&ehk=6S0W2tN0u8GSkyND672D4yLslkeCaDp1izXaqwUUetA%3d&risl=&pid=ImgRaw&r=0"
+              alt="Console Xbox portátil"
+            />
+            <div>
+              <h3>Xbox anuncia novo console portátil</h3>
+              <p>
+                A Microsoft apresentou seu novo console portátil focado em jogos em
+                nuvem e retrocompatibilidade com Xbox Series S/X.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://www.dexerto.com/cdn-image/wp-content/uploads/2024/07/17/ea-fc-25-licenses-teams-stadiums-leagues.jpg?width=1200&quality=60&format=auto"
+              alt="FIFA 25"
+            />
+            <div>
+              <h3>FIFA 25 promete revolução com novo motor gráfico</h3>
+              <p>
+                A EA Sports revelou detalhes de FIFA 25, que trará um novo motor
+                gráfico com foco em realismo, movimentação fluida e torcida
+                dinâmica.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://i.ytimg.com/vi/eBuUri6mHjo/maxresdefault.jpg"
+              alt="The Last of Us 3"
+            />
+            <div>
+              <h3>The Last of Us 3 está em desenvolvimento</h3>
+              <p>
+                De acordo com a Naughty Dog, o terceiro título da série The Last of
+                Us já está em desenvolvimento com foco narrativo ainda mais profundo
+                e novos personagens.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="link-noticia">
+          <article class="noticia">
+            <img
+              src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2025/04/nintendo-switch-2-console-best-buy.jpg"
+              alt="Nintendo Switch 2"
+            />
+            <div>
+              <h3>Nintendo Switch 2 pode ser anunciado ainda este ano</h3>
+              <p>
+                Rumores indicam que a Nintendo está preparando o anúncio do Switch 2
+                com hardware mais potente e retrocompatibilidade total com jogos da
+                geração atual.
+              </p>
+            </div>
+          </article>
+        </a>
       </section>
     </main>
     <footer>

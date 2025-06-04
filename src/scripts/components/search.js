@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function redirectToSearchPage() {
     if (searchInput.value.trim() !== "") {
-      window.location.href = "src/pages/busca.html";
+      window.location.href = "/src/pages/busca.html";
     }
   }
 
